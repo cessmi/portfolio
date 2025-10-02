@@ -1,73 +1,94 @@
-# React + TypeScript + Vite
+# 🌌 PMB Portfolio  
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A cinematic HUD-inspired portfolio showcasing design, code, and creativity.  
+Built with **React, Vite, Tailwind, Three.js, GSAP, and Framer Motion** to deliver smooth motion, interactive 3D, and futuristic visuals.  
 
-Currently, two official plugins are available:
+> **Status:** 🚧 In active development  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## ✨ Features  
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **3D Hero Section** powered by Three.js  
+- **Fluid Animations & Motion** using GSAP + Framer Motion  
+- **Responsive UI** styled with Tailwind  
+- **HUD-inspired layout** with glowing elements & subtle glitches  
+- **Project showcase** with interactive cards and transitions  
+- **Optimized build** with Vite for fast dev + production  
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🧰 Tech Stack  
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- [React](https://react.dev/) + [Vite](https://vitejs.dev/) – Framework & tooling  
+- [Tailwind CSS](https://tailwindcss.com/) – Styling  
+- [Three.js](https://threejs.org/) – 3D visuals / background scenes  
+- [GSAP](https://gsap.com/) – Timeline-based animations  
+- [Framer Motion](https://www.framer.com/motion/) – Component-level animations  
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 🚀 Getting Started  
+
+### Prerequisites  
+- Node.js ≥ 18  
+- npm (or yarn/pnpm)  
+
+### Installation  
+
+```bash
+# clone the repo
+git clone https://github.com/cessmi/portfolio.git
+cd portfolio
+
+# install dependencies
+npm install
+
+# run locally
+npm run dev
+
+# build for production
+npm run build
 ```
+---
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Project SetUp
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+portfolio/
+├─ public/           # static assets (icons, og images)
+├─ src/
+│  ├─ assets/        # models, textures, media
+│  ├─ components/    # reusable UI parts (Navbar, HUD frame, Cards)
+│  ├─ sections/      # Hero, About, Projects, Contact
+│  ├─ hooks/         # custom hooks
+│  ├─ styles/        # global CSS/tailwind entry
+│  ├─ App.jsx
+│  └─ main.jsx
+├─ vite.config.js
+├─ tailwind.config.js
+└─ package.json
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+
+---
+
+🗺️ Roadmap
+	•	Add 3D interactive black hole animation
+	•	Project detail pages with scroll-triggered GSAP animations
+	•	Dark/Light HUD themes
+	•	Accessibility polish (keyboard nav, focus states)
+	•	Deploy to Vercel/Netlify
+
+---
+
+🧑‍🎨 Credits
+
+Designed & coded by Princess Mikaela Borbajo (PMB)
+
+---
+
+📫 Contact
+	•	GitHub: cessmi
+	•	Portfolio Repo: portfolio
+	•	Email: 185735968+cessmi@users.noreply.github.com
+
+⸻
